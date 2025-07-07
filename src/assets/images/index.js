@@ -12,7 +12,8 @@ import Insurance from './insurance.png'
 import Licence from './license.png'
 import Fc from './fc.png'
 import Test from './drive.png'
+import Percentage from './percent1.png'
 
 export {User ,Slide1,Slide2,Slide3,Engine,
-    Tow,Wash,Ecm,Gentral,Plus,Insurance,Licence,Fc,Test     
+    Tow,Wash,Ecm,Gentral,Plus,Insurance,Licence,Fc,Test,Percentage  
 }

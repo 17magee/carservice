@@ -1,4 +1,4 @@
-import { Ecm, Engine, Fc, Gentral, Insurance, Licence, Slide1, Slide2, Slide3, Test, Tow, Wash } from '../../assets/images/index';
+import { Ecm, Fc, Gentral, Insurance, Licence, Percentage, Slide1, Slide2, Slide3, Test, Tow, Wash } from '../../assets/images/index';
 
 
 const sliderData = [
@@ -6,19 +6,25 @@ const sliderData = [
     id : '1',
     title : 'Gentral Checkup',
     describe : '100 % satification',
-    image : Slide1
+    offer : 'Minimum 10% Offer',
+    image : Slide1,
+    icon : Percentage
   },
   {
     id : '2',
-    title : 'Gentral Checkup',
+    title : 'ECM Services',
     describe : '100 % satification',
-    image : Slide2
+    offer : 'Minimum 10% Offer',
+    image : Slide2,
+    icon : Percentage
   },
   {
     id : '3',
-    title : 'Gentral Checkup',
+    title : 'Engine Cleaning',
     describe : '100 % satification',
-    image : Slide3
+    offer : 'Minimum 10% Offer',
+    image : Slide3,
+    icon : Percentage
   }
 ]
 
