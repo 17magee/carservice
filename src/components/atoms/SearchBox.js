@@ -16,7 +16,7 @@ export default function SearchBox({ searchContainer }) {
             placeholder={Strings.searchMore}
             placeholderTextColor={AppColor.primary}
             style={styles.input} />
-            <Icon name="search" size={25} color="#8D38C9" style={styles.icon} />
+            <Icon name="search" size={25} color={AppColor.primary} style={styles.icon} />
 
         </View>
     )

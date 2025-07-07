@@ -62,12 +62,10 @@ export default function SlideImage({
 }
 const styles = StyleSheet.create({
     sliderBox: {
-        marginTop: hp(2),
         width: ITEM_WIDTH,
         height: hp(25),
         borderRadius: wp(3),
         backgroundColor: '#fff',
-        alignSelf: 'center',
         overflow: 'hidden',
         shadowOpacity: 0.9,
         shadowRadius: 8,
