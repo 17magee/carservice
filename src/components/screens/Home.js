@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Header, Slider } from '../atoms'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
@@ -8,18 +8,18 @@ import { Strings } from '../../constants/Strings';
 import { AppFontSize, AppFontWeight } from '../../constants/AppFonts';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import ServiceCard from '../atoms/ServiceCard';
-
-
-
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
+  const navigation = useNavigation()
   return (
     <SafeAreaView style={styles.mainContainer} >
       <Header />
+      <ScrollView>
       <View style={styles.slider}>
         <View style={styles.sliderHeadContainer}>
           <Text style={styles.sliderHeaderText}>{Strings.specialOffers}</Text>
-          <TouchableOpacity style={styles.seeAllContainer}>
+          <TouchableOpacity style={styles.seeAllContainer} onPress={()=>navigation.navigate('Offer')}>
             <Text style={styles.seeAllText}>{Strings.seeAll}</Text>
             <Icon name="keyboard-double-arrow-right" size={20} color={AppColor.primary} />
           </TouchableOpacity>
@@ -45,7 +45,7 @@ const Home = () => {
           </View>
           <View><ServiceCard data={OthersData} /></View>
         </View>
-
+    </ScrollView>
     </SafeAreaView>
   )
 }

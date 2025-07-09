@@ -10,6 +10,7 @@ import { AppColor } from '../constants/AppColors';
 import { TouchableOpacity,StyleSheet,View,Image, Text } from 'react-native';
 import { Plus } from '../assets/images';
 import { AppFontSize, AppFontWeight } from '../constants/AppFonts';
+import Add from '../components/screens/Add';
 
 
 const Tab = createBottomTabNavigator();
@@ -73,7 +74,7 @@ export default function TabNavigator() {
       <Tab.Screen name="Offer" component={Offers} />
       <Tab.Screen
         name="Book"
-        component={() => <View />}
+        component={Add}
         options={{
           tabBarButton: (props) => (
             <CustomTabBarButton {...props} />

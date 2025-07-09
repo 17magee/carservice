@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import React, { StrictMode } from 'react'
+import React, { StrictMode, useState } from 'react'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { AppColor } from '../../constants/AppColors';
 import { User } from '../../assets/images';
@@ -7,6 +7,7 @@ import { AppFontSize, AppFontWeight } from '../../constants/AppFonts';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import SearchBox from './SearchBox';
 import { Strings } from '../../constants/Strings';
+import BottomSheet from './BottomSheet';
 
 
 
@@ -16,6 +17,8 @@ const Header = ({
     UserName = 'Guest',
     wish = "Good Morning"
 }) => {
+    
+
     return (
         <View style={[styles.mainContainer, headerContainer]}>
             <View style={styles.firstContainer}>
@@ -34,6 +37,9 @@ const Header = ({
                 <Text style={styles.searchText}>{Strings.searchMore}</Text>
                 <SearchBox searchContainer={styles.searchBox} />
             </View>
+            
+
+            
         </View>
     )
 }

@@ -1,12 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import HeaderMini from '../atoms/HeaderMini'
+import { Strings } from '../../constants/Strings'
 
 export default function Booking() {
   return (
-    <View>
-      <Text>Booking</Text>
-    </View>
+   <SafeAreaView>
+    <HeaderMini title={Strings.booking} />
+   </SafeAreaView>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  
+})

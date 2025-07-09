@@ -1,4 +1,6 @@
-import { Ecm, Fc, Gentral, Insurance, Licence, Percentage, Slide1, Slide2, Slide3, Test, Tow, Wash } from '../../assets/images/index';
+import { Ecm, Engine, EngineC, Fc, Gentral, Insurance, Licence, Painting, Percentage, Slide1,
+     Slide2, Slide3, Ten, Test, Tow, Tyre, Wash
+     } from '../../assets/images/index';
 
 
 const sliderData = [
@@ -79,7 +81,124 @@ const OthersData =[
         title : 'Testing',
         describe : 'Fully checkup your car',
         image : Test
-    }
+    },
+
 ]
 
-export {sliderData,ServiceData,OthersData}
+const offerData = [
+     {
+    id : '1',
+    title : 'Gentral Checkup',
+    describe : 'Full Checkup, Half the Price!',
+    offer : 'Offer Strating from 10%',
+    image : Gentral,
+    icon : Ten,
+    button : 'Check Availability'
+  },
+  {
+    id : '2',
+    title : 'ECM Services',
+    describe : 'ECM Service at a Special Price!',
+    offer : 'Offer Strating from 10%',
+    image : Ecm,
+    icon :Ten,
+    button : 'Check Availability'
+  },
+  {     
+    id : '3',
+    title : 'Engine Cleaning',
+    describe : 'Engine Cleaning Offer On!',
+    offer : 'Offer Strating from 10%',
+    image : EngineC,
+    icon : Ten,
+    button : 'Check Availability'
+  },
+   {     
+    id : '4',
+    title : 'Water Wash',
+    describe : 'Water Wash Offer On!',
+    offer : 'Offer Strating from 10%',
+    image : Wash,
+    icon : Ten,
+    button : 'Check Availability'
+  },
+  {     
+    id : '5',
+    title : 'Tyre Change',
+    describe : 'New Tyre Change Offer On!',
+    offer : 'Offer Strating from 10%',
+    image : Tyre,
+    icon : Ten,
+    button : 'Check Availability'
+  },
+  {     
+    id : '6',
+    title : 'Insurans Claim',
+    describe : 'Insurans Claim Offer On!',
+    offer : 'Offer Strating from 10%',
+    image : Insurance,
+    icon : Ten,
+    button : 'Check Availability'
+  },
+  {     
+    id : '7',
+    title : 'Painting',
+    describe : 'Painting Offer On!',
+    offer : 'Offer Strating from 10%',
+    image : Painting,
+    icon : Ten,
+    button : 'Check Availability'
+  }
+]
+
+const ServicesData = [
+     {
+    id : '1',
+    title : 'Gentral',
+    image : Gentral,
+    icon : Ten,
+    button : 'Booking'
+  },
+  {
+    id : '2',
+    title : 'ECM',
+    image : Ecm,
+    icon :Ten,
+    button : 'Booking'
+  },
+  {     
+    id : '3',
+    title : 'Engine',
+    image : EngineC,
+    icon : Ten,
+    button : 'Booking'
+  },
+   {     
+    id : '4',
+    title : 'Tow', 
+    image : Tow, 
+    button : 'Booking'
+  },
+  {     
+    id : '5',
+    title : 'Alignment',
+    image : Tyre,
+    icon : Ten,
+    button : 'Booking'
+  },
+  {     
+    id : '6',
+    title : 'AC Service',
+    image : Insurance,
+    icon : Ten,
+    button : 'Booking'
+  },
+  {     
+    id : '7',
+    title : 'Painting',
+    image : Painting,
+    button : 'Booking'
+  }
+]
+
+export {sliderData,ServiceData,OthersData,offerData ,ServicesData}

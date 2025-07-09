@@ -53,7 +53,7 @@ export default function SlideImage({
     return (
         <View style={styles.sliderBox}>
             <FlatList
-              //  ref={flatListRef}
+               ref={flatListRef}
                 data={data}
                 renderItem={renterItem}
                 keyExtractor={(item) => item.id}
